@@ -1,0 +1,4 @@
+import ftplib
+session=ftplib.FTP('optind.in','neph','optind123**')
+file=open('hello.txt','rb')
+session.storbinary('ST
