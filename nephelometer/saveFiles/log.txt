@@ -1,0 +1,300 @@
+12:09:2:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+12:09:3:	connected to ftp and the config file donwloaded
+12:09:3:	upload interval updated to 2
+12:09:5:	Program Started
+12:11:3:	Uploading files
+12:12:5:	connected to ftp and the config file donwloaded
+12:12:5:	upload interval updated to 8
+12:12:5:	Uploading log
+12:19:0:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+12:19:0:	connected to ftp and the config file donwloaded
+12:19:0:	upload interval updated to 8
+12:19:2:	Program Started
+12:22:3:	connected to ftp and the config file donwloaded
+12:24:3:	Uploading log
+12:24:4:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+12:24:4:	failed to connect to the ftp
+12:24:4:	upload interval updated to 8
+12:26:4:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+12:26:4:	connected to ftp and the config file donwloaded
+12:26:4:	upload interval updated to 8
+12:27:0:	Program Started
+12:30:1:	connected to ftp and the config file donwloaded
+12:30:1:	Uploading log
+12:31:0:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+12:31:0:	connected to ftp and the config file donwloaded
+12:31:0:	upload interval updated to 8
+12:31:2:	Program Started
+12:34:3:	connected to ftp and the config file donwloaded
+12:34:3:	Uploading log
+12:37:3:	connected to ftp and the config file donwloaded
+12:37:3:	Uploading log
+12:39:0:	Uploading files
+12:40:4:	connected to ftp and the config file donwloaded
+12:40:4:	Uploading log
+12:43:4:	connected to ftp and the config file donwloaded
+12:43:4:	Uploading log
+12:46:4:	connected to ftp and the config file donwloaded
+12:46:4:	Uploading log
+12:47:5:	Uploading files
+12:49:5:	connected to ftp and the config file donwloaded
+12:49:5:	Uploading log
+04:49:0:	No spectrometer could be connected
+04:49:1:	connected to ftp and the config file donwloaded
+04:49:1:	upload interval updated to 8
+04:49:3:	Program Started
+04:51:3:	No spectrometer could be connected
+04:51:3:	No spectrometer could be connected
+04:52:3:	connected to ftp and the config file donwloaded
+04:52:3:	Uploading log
+04:53:3:	No spectrometer could be connected
+04:53:3:	No spectrometer could be connected
+04:55:3:	No spectrometer could be connected
+04:55:3:	No spectrometer could be connected
+04:55:4:	connected to ftp and the config file donwloaded
+04:55:4:	Uploading log
+04:57:1:	Uploading files
+04:57:4:	No spectrometer could be connected
+04:57:4:	failed to connect to the ftp
+04:57:4:	upload interval updated to 8
+04:58:0:	Program Started
+05:00:0:	No spectrometer could be connected
+05:00:0:	No spectrometer could be connected
+05:00:3:	No spectrometer could be connected
+05:00:3:	failed to connect to the ftp
+05:00:3:	upload interval updated to 8
+05:00:5:	Program Started
+05:02:5:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+05:03:5:	connected to ftp and the config file donwloaded
+05:03:5:	Uploading log
+05:07:0:	connected to ftp and the config file donwloaded
+05:09:0:	Uploading log
+05:09:0:	Uploading files
+05:10:0:	connected to ftp and the config file donwloaded
+05:12:0:	Uploading log
+05:13:1:	connected to ftp and the config file donwloaded
+05:15:0:	Uploading log
+05:16:1:	connected to ftp and the config file donwloaded
+05:17:1:	Uploading files
+05:18:1:	Uploading log
+05:19:1:	connected to ftp and the config file donwloaded
+05:21:1:	Uploading log
+05:22:2:	connected to ftp and the config file donwloaded
+05:24:1:	Uploading log
+05:25:1:	Uploading files
+05:25:2:	connected to ftp and the config file donwloaded
+05:27:2:	Uploading log
+05:28:3:	connected to ftp and the config file donwloaded
+05:32:0:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+05:32:1:	connected to ftp and the config file donwloaded
+05:32:1:	upload interval updated to 8
+05:32:3:	Program Started
+05:35:3:	connected to ftp and the config file donwloaded
+05:37:3:	Uploading log
+05:39:4:	connected to ftp and the config file donwloaded
+05:41:4:	Uploading files
+05:41:5:	Uploading log
+05:44:0:	connected to ftp and the config file donwloaded
+05:45:0:	Uploading log
+05:47:1:	connected to ftp and the config file donwloaded
+05:48:0:	Uploading log
+05:49:5:	Uploading files
+05:50:2:	connected to ftp and the config file donwloaded
+06:12:5:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:13:0:	connected to ftp and the config file donwloaded
+06:13:0:	upload interval updated to 8
+06:13:2:	Program Started
+06:16:2:	connected to ftp and the config file donwloaded
+06:18:2:	Uploading log
+06:20:3:	connected to ftp and the config file donwloaded
+06:22:3:	Uploading files
+06:23:1:	Uploading log
+06:23:3:	connected to ftp and the config file donwloaded
+06:26:2:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:26:2:	connected to ftp and the config file donwloaded
+06:26:2:	inside spectrum setup
+06:26:2:	upload interval updated to 8
+06:26:4:	Program Started
+06:29:5:	connected to ftp and the config file donwloaded
+06:29:5:	inside spectrum setup
+06:29:5:	Scanning is started
+06:31:5:	Uploading log
+06:33:5:	connected to ftp and the config file donwloaded
+06:33:5:	inside spectrum setup
+06:33:5:	Scanning is started
+06:35:5:	Scanning is stopped
+06:35:5:	Uploading files
+06:36:5:	Uploading log
+06:37:0:	connected to ftp and the config file donwloaded
+06:37:0:	inside spectrum setup
+06:39:5:	Uploading log
+06:40:0:	connected to ftp and the config file donwloaded
+06:40:0:	inside spectrum setup
+06:43:0:	Uploading log
+06:43:1:	connected to ftp and the config file donwloaded
+06:43:1:	inside spectrum setup
+06:44:5:	Uploading files
+06:46:0:	Uploading log
+06:46:1:	connected to ftp and the config file donwloaded
+06:46:1:	inside spectrum setup
+06:47:0:	No spectrometer could be connected
+06:47:0:	connected to ftp and the config file donwloaded
+06:47:0:	inside spectrum setup
+06:47:0:	upload interval updated to 8
+06:47:2:	Program Started
+06:49:0:	Uploading log
+06:49:1:	connected to ftp and the config file donwloaded
+06:49:1:	inside spectrum setup
+06:49:1:	Scanning is started
+06:49:2:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:50:2:	connected to ftp and the config file donwloaded
+06:50:2:	inside spectrum setup
+06:50:2:	Scanning is started
+06:57:0:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:57:0:	connected to ftp and the config file donwloaded
+06:57:0:	inside spectrum setup
+06:57:0:	upload interval updated to 8
+06:57:2:	Program Started
+07:00:3:	connected to ftp and the config file donwloaded
+07:00:3:	inside spectrum setup
+07:00:3:	Scanning is started
+07:02:3:	Uploading log
+07:04:3:	connected to ftp and the config file donwloaded
+07:04:3:	inside spectrum setup
+07:04:3:	Scanning is started
+07:06:3:	Uploading files
+07:07:3:	Uploading log
+07:07:3:	Spectrometer Error. ( might me disconnected
+07:07:3:	Scanning is stopped
+07:07:4:	connected to ftp and the config file donwloaded
+07:07:4:	inside spectrum setup
+07:09:3:	No spectrometer could be connected
+07:09:3:	connected to ftp and the config file donwloaded
+07:09:3:	inside spectrum setup
+07:09:3:	upload interval updated to 8
+07:09:5:	Program Started
+07:11:5:	No spectrometer could be connected
+07:11:5:	No spectrometer could be connected
+07:12:5:	connected to ftp and the config file donwloaded
+07:12:5:	inside spectrum setup
+07:12:5:	Uploading log
+07:13:5:	No spectrometer could be connected
+07:13:5:	No spectrometer could be connected
+07:15:5:	No spectrometer could be connected
+07:15:5:	No spectrometer could be connected
+07:16:0:	connected to ftp and the config file donwloaded
+07:16:0:	inside spectrum setup
+07:16:0:	Uploading log
+07:17:3:	Uploading files
+07:18:3:	No spectrometer could be connected
+07:18:3:	No spectrometer could be connected
+07:19:0:	connected to ftp and the config file donwloaded
+07:19:0:	inside spectrum setup
+07:19:0:	Uploading log
+09:53:5:	No spectrometer could be connected
+09:53:5:	No spectrometer could be connected
+09:53:5:	connected to ftp and the config file donwloaded
+09:53:5:	inside spectrum setup
+09:53:5:	Uploading log
+09:53:5:	Uploading files
+09:55:5:	No spectrometer could be connected
+09:55:5:	No spectrometer could be connected
+12:06:3:	No spectrometer could be connected
+12:06:3:	failed to connect to the ftp
+12:06:3:	inside spectrum setup
+06:12:1:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:12:1:	failed to connect to the ftp
+06:12:1:	inside spectrum setup
+06:12:1:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:12:2:	failed to connect to the ftp
+06:12:2:	inside spectrum setup
+06:13:2:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:13:2:	failed to connect to the ftp
+06:13:2:	inside spectrum setup
+06:33:1:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:33:1:	failed to connect to the ftp
+06:33:1:	inside spectrum setup
+06:42:3:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:42:3:	failed to connect to the ftp
+06:42:3:	inside spectrum setup
+06:47:2:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:47:2:	failed to connect to the ftp
+06:47:2:	inside spectrum setup
+06:51:1:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:51:1:	failed to connect to the ftp
+06:51:1:	inside spectrum setup
+06:55:3:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+06:55:4:	connected to ftp and the config file donwloaded
+06:55:4:	inside spectrum setup
+06:55:4:	Scanning is started
+06:55:4:	upload interval updated to 8
+06:56:0:	Program Started
+07:00:0:	connected to ftp and the config file donwloaded
+07:00:1:	inside spectrum setup
+07:00:1:	Scanning is started
+07:00:1:	Uploading log
+07:04:1:	connected to ftp and the config file donwloaded
+07:04:2:	inside spectrum setup
+07:04:2:	Scanning is started
+07:04:2:	Uploading log
+07:04:2:	Uploading files
+07:08:4:	Scanning is stopped
+07:08:4:	connected to ftp and the config file donwloaded
+07:08:4:	inside spectrum setup
+07:08:4:	Uploading log
+07:11:5:	connected to ftp and the config file donwloaded
+07:11:5:	inside spectrum setup
+07:11:5:	Uploading log
+07:12:4:	Uploading files
+07:25:3:	Spectrometer <SeaBreezeDevice HR4000:HR4C5592> is now connected.
+07:25:3:	failed to connect to the ftp
+07:25:3:	inside spectrum setup
+07:25:3:	upload interval updated to 8
+07:25:5:	Program Started
+07:28:5:	connected to ftp and the config file donwloaded
+07:29:0:	inside spectrum setup
+07:29:0:	Uploading log
+07:32:0:	connected to ftp and the config file donwloaded
+07:32:0:	inside spectrum setup
+07:32:0:	Uploading log
+07:33:3:	Uploading files
+07:35:1:	connected to ftp and the config file donwloaded
+07:35:2:	inside spectrum setup
+07:35:2:	Uploading log
+08:04:2:	connected to ftp and the config file donwloaded
+08:04:2:	inside spectrum setup
+08:04:2:	Uploading files
+08:07:2:	Uploading log
+08:07:3:	connected to ftp and the config file donwloaded
+08:07:3:	inside spectrum setup
+08:10:2:	Uploading log
+08:10:3:	connected to ftp and the config file donwloaded
+08:10:4:	inside spectrum setup
+08:12:5:	Uploading files
+08:13:3:	Uploading log
+08:13:4:	connected to ftp and the config file donwloaded
+08:13:4:	inside spectrum setup
+08:16:3:	Uploading log
+08:16:4:	connected to ftp and the config file donwloaded
+08:16:5:	inside spectrum setup
+08:19:3:	Uploading log
+08:19:5:	connected to ftp and the config file donwloaded
+08:19:5:	inside spectrum setup
+08:21:2:	Uploading files
+08:22:4:	Uploading log
+08:22:5:	connected to ftp and the config file donwloaded
+08:23:0:	inside spectrum setup
+08:24:5:	No spectrometer could be connected
+08:24:5:	connected to ftp and the config file donwloaded
+08:24:5:	inside spectrum setup
+08:24:5:	upload interval updated to 8
+08:25:4:	Uploading log
+08:26:0:	connected to ftp and the config file donwloaded
+08:26:0:	inside spectrum setup
+08:28:4:	Uploading log
+08:29:0:	connected to ftp and the config file donwloaded
+08:29:1:	inside spectrum setup
+08:29:4:	Uploading files
+08:31:5:	Uploading log
+08:32:1:	connected to ftp and the config file donwloaded
+08:32:1:	inside spectrum setup

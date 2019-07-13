@@ -20,7 +20,10 @@ spectrometerFlag=0
 ftpConnection=0
 uploadTime=0
 uploadInterval=60
+spec=0
+
 def spectrometerConnect():
+        global spec
         devices=sb.list_devices()
         print(devices)
         global spectrometerFlag
@@ -28,6 +31,7 @@ def spectrometerConnect():
                 spectrometerFlag=1
                 print("Something is connected")
                 messagebox.showinfo("Detected", "Spectrometer detected :"+str(devices[0]))
+                spec=sb.Spectrometer(devices[0])
                 return 1
         else:
                 messagebox.showinfo("Error", "No spectrometer detected")
@@ -48,6 +52,7 @@ def start():
         automatic();
 
 def manual():
+    global spec
     print("spectrometer flag  is");
     print(spectrometerFlag)
     durationValue=duration.get()
@@ -57,10 +62,7 @@ def manual():
     var2=tk.IntVar()
     frame2=Frame(root,width=450,height=50);
     frame2.grid(row=0);
-    devices=sb.list_devices()
-    
-    if(len(devices)>0):
-        spec=sb.Spectrometer(devices[0])
+    if(spectrometerFlag):
         spec.integration_time_micros(int(integrationTime.get(),10))
     else:
         spec=0
@@ -93,9 +95,8 @@ def manual():
         secondButton.wait_variable(var2)
         print("Reading Values")
         w0.grid_forget()
-        w0=Label(frame2, text="Getting Values for Second Please wait... ", font='Helvetica 14 bold')
+        w0=Label(frame2, text="Getting Values for Second Gas Please wait... ", font='Helvetica 14 bold')
         w0.grid(row=0, pady=6)
-        
         secondData=getdata(durationValue,spec);
         print(secondData)
         alpha=alphaCalculation(nitrogenData,secondData);
@@ -115,6 +116,7 @@ def manual():
     measurement(durationValue,spec)
 
 def automatic():
+    global spec
     print("automatic mode here we go")
     print("spectrometer flag  is");
     print(spectrometerFlag)
@@ -125,8 +127,7 @@ def automatic():
     
     frame2=Frame(root,width=450,height=50);
     frame2.grid(row=0);
-    if(len(devices)>0):
-        spec=sb.Spectrometer(devices[0])
+    if spectrometerFlag:
         spec.integration_time_micros(int(integrationTime.get(),10))
     else:
         spec=0
@@ -169,7 +170,7 @@ def automatic():
 
     
 def measurement(durationValue,spec):
-    
+    uploadText=tk.StringVar()
     frame3=Frame(root);
     frame3.grid(row=0);
     with open ('constants.txt', 'r') as f:
@@ -180,12 +181,13 @@ def measurement(durationValue,spec):
     stopButton.grid(row=1,column=0);
     startButton = Button(frame3, text=" Start ", command=startscan);
     startButton.grid(row=1,column=1);
-
     calibrateButton = Button(frame3, text="Re-calibrate ", command=recalibrate);
     calibrateButton.grid(row=1,column=3);
         
     button = Button(frame3, text="QUIT", command=quit)
     button.grid(row=1,column=2)
+    uploadLabel=Label(frame3, textvariable=uploadText)
+    uploadLabel.grid(row=0,column=4, pady=6)
 
     w0=Label(frame3, text="Reading in process", font='Helvetica 14 bold')
     w0.grid(row=0, pady=6)
@@ -194,12 +196,16 @@ def measurement(durationValue,spec):
     ftpUserVar=ftpUser.get()
     ftpPassVar=ftpPass.get()
     
-    if ftpConnection:
-    	session = ftplib.FTP(ftpVar,ftpUserVar,ftpPassVar)
+   # if ftpConnection==1:
+    #	session = ftplib.FTP(ftpVar,ftpUserVar,ftpPassVar)
+    #else:
+    #	session=0
     count=0
     while(1):
         if(running):
-            scanning(durationValue,spec,first_column,second_column,session,count)  # After 1 second, call scanning
+            currentTime=time.localtime().tm_min
+            uploadText.set('Time from last upload:'+str(currentTime-uploadTime))
+            scanning(durationValue,spec,first_column,second_column,count,currentTime,ftpVar,ftpUserVar,ftpPassVar)  # After 1 second, call scanning
         root.update()
         count=count+1
 
@@ -219,7 +225,7 @@ def startscan():
     global running
     running = True
     
-def scanning(durationValue,spec,first_column,second_column,session,count):
+def scanning(durationValue,spec,first_column,second_column,count,currentTime,ftpVar,ftpUserVar,ftpPassVar):
     global running 
     global ftpConnection
     global uploadTime
@@ -242,14 +248,20 @@ def scanning(durationValue,spec,first_column,second_column,session,count):
             f.write(str(i)+'\t')
         f.write('\n')
         f.close()
-        #print(time.localtime().tm_min)
 #        print(uploadInterval)
-        if (count%5==0  and ftpConnection==1):
+        if (currentTime-uploadTime>=uploadInterval  and ftpConnection==1):
         	print("uploading  now")
         	file = open(dateFile,'rb')                  # file to send
-        	session.storbinary('STOR '+dateFile, file)     # send the file
+        	try:
+        		session = ftplib.FTP(ftpVar,ftpUserVar,ftpPassVar)
+        		session.storbinary('STOR '+dateFile, file)     # send the file
+        		session.quit()
+
+        	except IOERROR:
+        		print(sys.exe_info()[0])
         	file.close()
-   #     	uploadTime=time.localtime().tm_min                                   # close file and FTP
+        	
+        	uploadTime=currentTime
         
         print(out)
         
@@ -273,6 +285,7 @@ def getdata(durationValue,spec):
                             x[i]=x[i]+y[i]
     else:
             c=c+1;
+            time.sleep(10)
     for j in range(0,len(x)):
             x[j]=x[j]/c;
     return x
@@ -323,22 +336,9 @@ def ftpConnect():
 
 
 
-#ftpVar=ftp.get()
-#ftpUserVar=ftpUser.get()
-#ftpPassVar=ftpPass.get()
-#session = ftplib.FTP(ftpVar,ftpUserVar,ftpPassVar)
-#file = open('hello.txt','rb')                  # file to send
-#session.storbinary('STOR hello.txt', file)     # send the file
-#file.close()                                    # close file and FTP
-#session.quit()
-
-
 root = Tk()
-#root.configure(background='black')
-#root.style=Style()
-#root.style.theme_use("vista")
 root.attributes('-zoomed', True)
-root.title('Optind Nephelometer Interface')
+root.title( 'Optind Nephelometer Interface')
 frame=Frame(root);
 frame.grid(row=0);
 
@@ -360,7 +360,7 @@ ftp.insert(END, "optind.in")
 w3=Label(frame, text="FTP username",font=font_value).grid(row=2, column=3)
 ftpUser = Entry(frame)
 ftpUser.grid(row=2, column=4)
-ftpUser.insert(END, "neph")
+ftpUser.insert(END, "nephelometer")
 
 
 w3=Label(frame, text="FTP password",font=font_value).grid(row=3, column=3)

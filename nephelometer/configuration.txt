@@ -1,0 +1,4 @@
+[configuration of ftp][format: website username passwrod]
+optind.in
+neph
+optind123**
